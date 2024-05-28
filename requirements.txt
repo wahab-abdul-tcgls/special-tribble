@@ -2,3 +2,7 @@ crewai
 langchain_google_genai
 load_dotenv
 crewai_tools
+Flask 
+feedparser 
+SQLAlchemy
+Flask-SQLAlchemy

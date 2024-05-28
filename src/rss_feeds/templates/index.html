@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Latest News</title>
+</head>
+<body>
+    <h1>Latest News</h1>
+    <ul>
+        {% for article in articles %}
+            <li>
+                <h2>{{ article.title }}</h2>
+                {% if article.image_url %}
+                    <img src="{{ article.image_url }}" alt="{{ article.title }}" style="float: left; margin-right: 10px;">
+                {% endif %}
+                <p>{{ article.summary | safe }}</p>
+                <p>Published: {{ article.published.strftime('%Y-%m-%d %H:%M:%S') }}</p>
+                <a href="{{ article.link }}">Read more</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
