@@ -1,5 +1,5 @@
 # special-tribble
-Building personalized News AI agent and Recomender system
+Building personalized News AI agent and Recomender system.
 Here is a prototype demo : 
 
 
